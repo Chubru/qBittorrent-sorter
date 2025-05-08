@@ -47,7 +47,7 @@ def main_loop(logger):
 
 def process_torrent(client, torrent, logger):
     media_count = sum(
-        file.name.endswith(('.mp4', '.mkv', '.avi', '.mov')) for file in client.torrents_files(torrent.hash))
+        file.name.endswith(('.mp4', '.mkv', '.avi', '.mov', '.m4v')) for file in client.torrents_files(torrent.hash))
     destination_folder = '/downloads/data'
     if media_count == 1:
         destination_folder = '/downloads/films'
