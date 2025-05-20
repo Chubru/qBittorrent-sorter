@@ -1,5 +1,5 @@
 pip~=24.1.2
 wheel~=0.41.2
-setuptools~=70.3.0
+setuptools~=80.7.1
 packaging~=23.2
 qbittorrent-api
